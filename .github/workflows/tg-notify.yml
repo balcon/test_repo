@@ -10,6 +10,5 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         format: markdown
-        message: |  #https://help.github.com/en/actions/reference/contexts-and-expression-syntax-for-github-actions#github-context
-          Commit in *${{ github.repository }} by _${{ github.actor }}".
+        message: Commit in *${{ github.repository }} by _${{ github.actor }}".
           [${{github.sha}}@${{ github.ref }}]
