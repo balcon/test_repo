@@ -10,5 +10,5 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         format: markdown
-        message: Commit in *${{ github.repository }}* by _${{ github.actor }}_".
+        message: Commit in *${{ github.repository }}* by __${{ github.actor }}__".
           [${{github.sha}}@${{ github.ref }}]
