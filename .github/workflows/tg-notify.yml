@@ -12,7 +12,8 @@ jobs:
           format: markdown
           disable_web_page_preview: true
           message: |
-            ${{ github.actor }} created commit:
+            In ${{ github.repository }} was created commit:
             *${{ github.event.commits[0].message }}*
-            Repository: ${{ github.repository }}
+            ${{ github.event.commits[0]}}
+            loop: ${{ github.event.commits }}
             https://github.com/${{ github.repository }}/commit/${{github.sha}}
